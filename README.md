@@ -16,6 +16,8 @@ bash run_annotation.sh FILE TAG
 The scripts loops through the directories of your input file, searches for names beginning with `mt_` and annotates the tree `ntuples` in this directory.
 The annotations can be found in branches of this tree with the set prefix `TAG`.
 
+Note that the script has an argparse layer. Feel free to use `--help` to get further information.
+
 ## Which variables are used?
 
 Check out the file `mt_training_config.yaml`, there are the variables defined. The list in the entry `classes` defines numbers for the output classes of the classifier.
